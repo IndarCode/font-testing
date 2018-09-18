@@ -1,0 +1,298 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  color: rgb(35, 0, 0);
+  font-family: 'Roboto', sans-serif;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+div#root {
+    overflow-y: scroll;
+    height: 100%;
+    width: calc(100% + 20px);
+}
+a:focus, input:focus{
+  outline: none;
+  outline-offset: 0px;
+}
+input::placeholder{
+  color: #252525;
+}
+
+div#root {
+    overflow-y: scroll;
+    height: 100%;
+    width: calc(100% + 20px);
+    padding: 1.5% 2% 1.5% 1.5%;
+}
+a.logo {
+    position: absolute;
+    left: 3%;
+    top: 6%;
+    display: block;
+    max-width: 12%;
+}
+section.header {
+    background-color: #230000;
+    text-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 5vh;
+    position: relative;
+}
+section.header h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+    color: #f1f1f1;
+}
+section.header input {
+    padding: 5px 15px;
+    border: none;
+    font-size: 13px;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #252525;
+}
+section.header .text-box {
+    width: 60%;
+    text-align: left;
+}
+section.header .text-box label{
+    font-size: 15px;
+    display: block;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+section.header .text-box input {
+    padding: 19px 30px;
+    width: 100%;
+    font-size: 20px;
+}
+section.header ul.form {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 35%;
+    margin: 20px auto 0;
+}
+section.header ul.form li {
+    width: 32%;
+}
+.form li i {
+    font-style: normal;
+    color: #f1f1f1;
+    font-size: 12px;
+    text-align: left;
+    display: block;
+}
+section.fonts-holder {
+    padding: 50px;
+}
+
+
+.fonts {
+    position: fixed;
+    background-color: #fff;
+    right: -250px;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    z-index: 1;
+    -webkit-box-shadow: 1px 0px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 0px 16px rgba(0, 0, 0, 0.3);
+    padding: 40px 40px;
+    transition: all 0.6s ease;
+}
+.fonts.show {
+    right:0px;
+}
+.header .fonts ul {
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 0px;
+}
+.header .fonts ul li {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.header .fonts ul li:hover {
+    color: #f00;
+}
+.header .fonts span {
+    background-color: #863737;
+    padding: 10px 20px;
+    position: absolute;
+    left: -200px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    top: 6%;
+}
+.header .fonts span i {
+    font-style: normal;
+    font-size: 21px;
+    color: #fff;
+    line-height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    font-weight: 300;
+    transform: rotate(0deg);
+    transition: all 0.3s ease 0.3s;
+}
+.header .fonts span.show{
+    left: -39px;
+    padding: 10px 13px;
+}
+.header .fonts span.show i {
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.fonts h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.header .fonts ul li.selected{
+  color: #f00;
+}
+.header .fonts ul li.selected:after {
+    background-image: url(images/check.png);
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    content: ' ';
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: 10px;
+    margin-left: 5px;
+}
+ul.fonts-list-selected li {
+    background-color: #ca0000;
+    color: #fff;
+    padding: 5px 5px;
+    font-size: 12px;
+    margin: 4px 2px 0;
+    cursor: pointer;
+}
+ul.fonts-list-selected {
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 80%;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    bottom: -29px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.text {
+    padding: 30px;
+    background-color: #f1f1f1;
+    margin-bottom: 60px;
+    font-size: 25px;
+    position: relative;
+}
+.text:before {
+    content: attr(font);
+    position: absolute;
+    top: -20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    right: 0;
+    font-weight: 200;
+}
+
+
+
+
+
+
+/* Fonts family css */
+.text.Roboto{
+  font-family: 'Roboto', sans-serif;
+}
+.text.Lato{
+  font-family: 'Lato', sans-serif;
+}
+.text.OpenSans{
+  font-family: 'Open Sans', sans-serif;
+}
+.text.AbrilFatFace{
+  font-family: 'Abril Fatface', cursive;
+}
+.text.Raleway{
+  font-family: 'Raleway', sans-serif;
+}
+.text.Monteserat{
+  font-family: 'Montserrat', sans-serif;
+}
+.text.OldStandardTT{
+  font-family: 'Old Standard TT', serif;
+}
+.text.Lora{
+  font-family: 'Lora', serif;
+}
+.text.FrankRuhlLibre{
+  font-family: 'Frank Ruhl Libre', serif;
+}
+.text.PlayfairDisplay{
+  font-family: 'Playfair Display', serif;
+}
+.text.Archivo{
+  font-family: 'Archivo', sans-serif;
+}
+.text.Spectral{
+  font-family: 'Spectral', serif;
+}
+.text.FjallaOne{
+  font-family: 'Fjalla One', sans-serif;
+}
+.text.Rubik{
+  font-family: 'Rubik', sans-serif;
+}
+.text.SourceSansPro{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.text.Cardo{
+  font-family: 'Cardo', serif;
+}
+.text.Cormorant{
+  font-family: 'Cormorant', serif;
+}
+.text.WorkSans{
+  font-family: 'Work Sans', sans-serif;
+}
+.text.Nunito{
+  font-family: 'Nunito', sans-serif;
+}
+.text.Poppins{
+  font-family: 'Poppins', sans-serif;
+}
